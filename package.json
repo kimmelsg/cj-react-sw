@@ -1,0 +1,25 @@
+{
+  "name": "react-sw",
+  "version": "0.0.1",
+  "description": "Differ tasks to service workers with React",
+  "main": "index.js",
+  "scripts": {
+    "test": " "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/navjobs/react-sw.git"
+  },
+  "keywords": [
+    "sw",
+    "service",
+    "worker",
+    "reactjs"
+  ],
+  "author": "Zach Silveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/navjobs/react-sw/issues"
+  },
+  "homepage": "https://github.com/navjobs/react-sw#readme"
+}
