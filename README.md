@@ -65,9 +65,9 @@ class Request extends React.Component {
 ###Cache Assets
 
 ```js
-import { CacheImage } from 'react-sw'
+import { Cache } from 'react-sw'
 
 export default () => (
-  <CacheImage src="http://google.com/image.png" />
+  <Cache url="http://google.com/image.png"><img src="http://google.com/image.png"/></Cache>
 )
 ```
