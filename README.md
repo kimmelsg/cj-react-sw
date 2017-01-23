@@ -1,5 +1,5 @@
 # react-sw
-A top-level React component that lets you interact with a service worker
+A set of React components that let you interact with a service worker
 
 
 ##API
@@ -40,7 +40,7 @@ This service worker will cache all get requests by default. We've added custom s
 Generally, you won't want to do this, but there are cases where your search system may use post over get (such as algolia)
 
 ```js
-import { CacheRequest } from 'react-sw'
+import { Cache } from 'react-sw'
 
 class Request extends React.Component {
 
@@ -52,7 +52,7 @@ class Request extends React.Component {
   render() {
     return (
       <div>
-        <CacheRequest url="/api/test" value={this.state.response} />
+        <Cache url="/api/test" value={this.state.response} />
       </div>
     )
   }
@@ -60,7 +60,7 @@ class Request extends React.Component {
 
 ```
 `Cache` will only update the cache if the value exists.
-
+if `value` is set on the Cache component, we will assume the value for the url is whatever is passed there, if it is null, it will not be updated in the cache. This means we can omit the `value` prop and cache assets directly:
 
 ###Cache Assets
 
